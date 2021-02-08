@@ -1,0 +1,49 @@
+* {
+  border-color: transparent !important;
+  transition: 0.25s ease;
+}
+body {
+  background-color: #ffffff;
+}
+a {
+  color: black !important;
+}
+.img {
+  border-radius: 10px;
+  height: 300px;
+  width: 240px;
+  cursor: pointer;
+}
+nav {
+  height: 64px !important;
+  position: fixed !important;
+  z-index: 15;
+  width: 100%;
+  background-color: #eee7e7dc;
+}
+h1 {
+  padding-top: 11vh;
+  padding-bottom: 1vh;
+}
+.a {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(194, 191, 191) !important;
+}
+.a:hover {
+  color: #0f1111 !important;
+}
+.row {
+  margin: 0 !important;
+}
+footer {
+  height: 20vh;
+}
+table {
+  background-color: rgba(114, 109, 109, 0.233);
+  backdrop-filter: blur(100px);
+}
+.carta-bodyy {
+  background-color: transparent;
+  backdrop-filter: blur(100px);
+}

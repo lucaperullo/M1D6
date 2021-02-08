@@ -4,7 +4,7 @@
     <title>Top Amazon Products</title>
     <link
       rel="icon"
-      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvLLWEPdXgShZMiltdesVAWYDCVwf0Cnjgg&usqp=CAU"
+      href="https://www.shareicon.net/data/512x512/2016/07/06/98749_amazon_512x512.png"
       type="image/icon type"
     />
     <!-- Required meta tags -->
@@ -15,64 +15,29 @@
     />
 
     <!-- Bootstrap CSS -->
+    <style></style>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        background-color: #ffffff;
-      }
-      a {
-        color: black;
-      }
-      .img {
-        border-radius: 10px;
-        height: 300px;
-        width: 240px;
-        cursor: pointer;
-      }
-    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#"
-        ><img
-          class="navlogo"
-          src="https://giannonecomputers.it/wp-content/uploads/2020/04/cb730e8b-8d42-4c72-a1ba-1eb3677f8c14-amazon-logo.png"
-          width="100"
-          height="50"
-          style="margin-top: 10px"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+    <div class="container w-100">
+      <nav
+        class="navbar navbar-expand-lg"
+        style="width: 100%; left: 0; padding-left: 30px"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Most Bought <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tech</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="https://amazon.com/">Amazon.com</a>
-          </li>
-        </ul>
+        <a class="navbar-brand" href="#"
+          ><img
+            class="navlogo"
+            src="https://giannonecomputers.it/wp-content/uploads/2020/04/cb730e8b-8d42-4c72-a1ba-1eb3677f8c14-amazon-logo.png"
+            width="100"
+            height="50"
+            style="margin-top: 10px"
+        /></a>
         <form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
@@ -81,37 +46,137 @@
             aria-label="Search"
           />
         </form>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <h1 onclick="h1changer()" class="text-center">Amazon Suggested</h1>
-      <button style="margin-left: 700px" onclick="bgchanger()">
-        Add style
-      </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link a" href="#"
+                >Most Bought <span class="sr-only a"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a onclick="imgvisibility()" class="nav-link a" href="#">Hide images</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link a" href="https://amazon.com/">Amazon.com</a>
+            </li>
+            <li class="nav-item">
+                <button style=" background-color: transparent; right:0" onclick="pricecolor()" class="nav-link a">Price colorizer</a>
+              </li>
+          </ul>
+         
+          <button style="margin-left: 700px; background-color: transparent; right:0" onclick="bgchanger()">
+            Add style
+          </button>
+        </div>
+      </nav>
     </div>
-    <div class="container">
-      <table class="table table-hover table-light">
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>
-              <a
-                href="https://www.amazon.it/Smartphone-Blackview-A80-Pro-Cellulari/dp/B081SWFXNF/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFBSUo2Wk40NkRYRzYmZW5jcnlwdGVkSWQ9QTAzMTA4NjIzR1lIU0JNT0o4WkdPJmVuY3J5cHRlZEFkSWQ9QTAyNDY4NjEzVlFZREVQTVc5S0kwJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
-              >
-                <img
-                  class="img"
-                  src="https://images-na.ssl-images-amazon.com/images/I/51rKP57-dqL._AC_SL1000_.jpg"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  title="Tipo di pannello: IPS
+    <div class="container-fluid mb-3" style="display: flex; justify-content: center">
+      <h1 onclick="h1changer()" style="cursor: pointer; width: 350px">
+        Click to reveal
+      </h1>
+    </div>
+    <div class="container mb-5">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x._CB432458380_.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Computers_1x._CB432469755_.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Toys_en_US_1x._CB431858161_.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Home_v2_en_US_1x._CB429090084_.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Beauty_v2_en_US_1x._CB429089975_.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+    <div class="container" style="position: absolute; top: 50vh; right: 50px;left: 50px">
+      <div
+        class="container-fluid row"
+        style="display: flex; justify-content: space-between"
+      >
+        <div class="col-md-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <a
+                    href="https://www.amazon.it/Smartphone-Blackview-A80-Pro-Cellulari/dp/B081SWFXNF/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFBSUo2Wk40NkRYRzYmZW5jcnlwdGVkSWQ9QTAzMTA4NjIzR1lIU0JNT0o4WkdPJmVuY3J5cHRlZEFkSWQ9QTAyNDY4NjEzVlFZREVQTVc5S0kwJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
+                  >
+                    <img
+                      class="img"
+                      src="https://images-na.ssl-images-amazon.com/images/I/51rKP57-dqL._AC_SL1000_.jpg"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="right"
+                      title="Tipo di pannello: IPS
                   Risoluzione del display: HD + IPS 19: 9
                   Dimensioni dello schermo: 6,49 pollici
                   Risoluzione: 1560 * 720
@@ -126,48 +191,48 @@
                   Slot per schede TF: supporto
                   Capacità massima della scheda TF: 256 GB
                   USB: tipo C"
-              /></a>
-            </td>
-            <td>Blackview A80 Pro</td>
+                  /></a>
+                </td>
+                <td>Blackview A80 Pro</td>
 
-            <td class="td">124,99 €</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>
-              <a
-                href="https://www.amazon.it/OUKITEL-Smartphone-DotDisplay-Fotocamere-Posteriori/dp/B08GF7WQZJ/ref=sr_1_2_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFBSUo2Wk40NkRYRzYmZW5jcnlwdGVkSWQ9QTAzMTA4NjIzR1lIU0JNT0o4WkdPJmVuY3J5cHRlZEFkSWQ9QTA4MDA4MzExWDAyUk5TRVdEQUlTJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
-              >
-                <img
-                  class="img"
-                  src="https://images-na.ssl-images-amazon.com/images/I/71oMSWUgyLL._AC_SL1500_.jpg"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  title="Doppia fotocamera posteriore da 16MP + 2MP, fotocamera frontale da 20MP ad alta risoluzione: in grado di catturare immagini con colori più ricchi in alta nitidezza e continuare a registrare la tua vita meravigliosa. Registra chiaramente la bellezza di ogni giorno insieme a te.
+                <td class="td">124,99 €</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  <a
+                    href="https://www.amazon.it/OUKITEL-Smartphone-DotDisplay-Fotocamere-Posteriori/dp/B08GF7WQZJ/ref=sr_1_2_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFBSUo2Wk40NkRYRzYmZW5jcnlwdGVkSWQ9QTAzMTA4NjIzR1lIU0JNT0o4WkdPJmVuY3J5cHRlZEFkSWQ9QTA4MDA4MzExWDAyUk5TRVdEQUlTJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
+                  >
+                    <img
+                      class="img"
+                      src="https://images-na.ssl-images-amazon.com/images/I/71oMSWUgyLL._AC_SL1500_.jpg"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="right"
+                      title="Doppia fotocamera posteriore da 16MP + 2MP, fotocamera frontale da 20MP ad alta risoluzione: in grado di catturare immagini con colori più ricchi in alta nitidezza e continuare a registrare la tua vita meravigliosa. Registra chiaramente la bellezza di ogni giorno insieme a te.
                 Batteria da 4000 mAh: standby a lungo termine, resta attivo al tuo fianco, pronto per le tue necessità
                 6,4 pollici Nice Waterdrop 19,2: 9 a schermo intero: ti aiuta a esplorare ogni dettaglio e goderti la colorata vita di viaggio.
                 4 GB di RAM + 64 GB di ROM + sistema Android 10 Oreo + nuovo processore quad-core: capacità sufficiente, download più veloce, corsa più veloce, gioco più fluido. (Capacità massima della scheda TF 256 GB)
-                Doppio slot per scheda SIM: due nano card. Nessuno Problemi di scelte SIM. Evita i problemi legati alla sostituzione frequente delle schede telefoniche.
+                Doppio slot per scheda SIM: due nano carta. Nessuno Problemi di scelte SIM. Evita i problemi legati alla sostituzione frequente delle schede telefoniche.
                 Curve del corpo 3D: curva squisita, sentiti più a tuo agio nella tua mano.
                 Supporta molte APP: Whats App, Snapchat, Instagram, Facebook, Twitter, YouTube, ecc C.
                 Connettività"
-              /></a>
-            </td>
-            <td>OUKITEL C21</td>
-            <td class="td">110,49 €</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>
-              <a
-                href="https://www.amazon.it/Smartphone-Caricatore-fotocamere-Versione-Italiana/dp/B08QTSP98K/ref=sr_1_3_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-3-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFBSUo2Wk40NkRYRzYmZW5jcnlwdGVkSWQ9QTAzMTA4NjIzR1lIU0JNT0o4WkdPJmVuY3J5cHRlZEFkSWQ9QTEwMzI2NTAyVDc3NEFLRUo1TFBHJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
-              >
-                <img
-                  class="img"
-                  src="https://images-na.ssl-images-amazon.com/images/I/81z3K3uMfbL._AC_SL1500_.jpg"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  title="Il design sofisticato di Galaxy S21+ 5G ridefinisce l'identità Galaxy.
+                  /></a>
+                </td>
+                <td>OUKITEL C21</td>
+                <td class="td">110,49 €</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>
+                  <a
+                    href="https://www.amazon.it/Smartphone-Caricatore-fotocamere-Versione-Italiana/dp/B08QTSP98K/ref=sr_1_3_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-3-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFBSUo2Wk40NkRYRzYmZW5jcnlwdGVkSWQ9QTAzMTA4NjIzR1lIU0JNT0o4WkdPJmVuY3J5cHRlZEFkSWQ9QTEwMzI2NTAyVDc3NEFLRUo1TFBHJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
+                  >
+                    <img
+                      class="img"
+                      src="https://images-na.ssl-images-amazon.com/images/I/81z3K3uMfbL._AC_SL1500_.jpg"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="right"
+                      title="Il design sofisticato di Galaxy S21+ 5G ridefinisce l'identità Galaxy.
                 Con le sue fotocamere puoi creare contenuti da professionista:
                 * Fotocamera Principale 12MP: per scatti definiti anche di notte
                 * Fotocamera Teleobiettivo 64MP: per foto ad alta risoluzione
@@ -178,45 +243,45 @@
                 Con la Modalità Ritratto otterrai selfie da copertina. L'intelligenza artificiale ti aiuterà a gestire la luce e la sfocatura della foto dovuta al movimento, oltre che a pulire il volto da imperfezioni e applicare filtri ed effetti.
                 Vedrai la notte sotto un'altra luce. Con la Modalità Notte ottieni un'immagine finale che è il risultato di una combinazione rapida di scatti, per ottenere foto sempre definite anche in condizioni di scarsa luminosità.
                 La batteria intelligente da 4.800mAh, la RAM da 8 GB e la memoria interna da 256 GB di Galaxy S21+ 5G ti supporteranno nel tuo quotidiano, per tutto il giorno. Sfrutta il processore Exynos 2100 e la connettività 5G per giocare anche online e riprodurre musica e video senza interruzioni.
-                Il display Dynamic AMOLED 2x adatta il refresh rate di 120Hz ai tuoi contenuti, per farti risparmiare batteria.
+                Il display Dynamic AMOLED 2x adatta il refresh rate di 175Hz ai tuoi contenuti, per farti risparmiare batteria.
                 La confezione contiene anche il caricabatterie da 25W per la Ricarica rapida."
-              /></a>
-            </td>
-            <td>Samsung Smartphone Galaxy S21+ 5G</td>
-            <td class="td">1.129,00 €</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>
-              <a
-                href="https://www.amazon.it/Caricabatterie-USB-Amazon-compatibile-reader/dp/B01J2G52O6/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-4"
-              >
-                <img
-                  class="img"
-                  src="https://images-na.ssl-images-amazon.com/images/I/61v7a4tj71L._AC_SL1275_.jpg"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  title="Caribatterie originale Amazon da 5W, 1A, compatibile con la maggior parte dei dispositivi USB (richiede cavo USB, non incluso con il caricabatterie)
+                  /></a>
+                </td>
+                <td>Samsung Smartphone Galaxy S21+ 5G</td>
+                <td class="td">1.129,00 €</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>
+                  <a
+                    href="https://www.amazon.it/Caricabatterie-USB-Amazon-compatibile-reader/dp/B01J2G52O6/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-4"
+                  >
+                    <img
+                      class="img"
+                      src="https://images-na.ssl-images-amazon.com/images/I/61v7a4tj71L._AC_SL1275_.jpg"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="right"
+                      title="Caribatterie originale Amazon da 5W, 1A, compatibile con la maggior parte dei dispositivi USB (richiede cavo USB, non incluso con il caricabatterie)
                 Approvato per e-Reader Kindle, tablet Fire e Fire TV Stick
                 Compatibile con la maggior parte dei dispositivi ricaricabili con USB (smartphone, tablet, e-reader e altri)
                 Ideale per l'utilizzo con il cavo USB - Micro USB incluso nei dispositivi Amazon e nei ricambi in vendita nel Kindle Store"
-              /></a>
-            </td>
-            <td>Charger Amazon Basics</td>
-            <td class="td">14,99 €</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>
-              <a
-                href="https://www.amazon.it/nuovo-tablet-fire-hd-8-schermo-hd-da-8-nero-64-gb-con-offerte-speciali/dp/B0839MWCMT/ref=sr_1_5?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-5"
-              >
-                <img
-                  class="img"
-                  src="https://images-na.ssl-images-amazon.com/images/I/61YZ10XDqnL._AC_SL1000_.jpg"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  title="Schermo HD da 8”, il doppio dello spazio di archiviazione (32 o 64 GB di memoria interna espandibile fino a 1 TB con una scheda microSD) e 2 GB di RAM.
+                  /></a>
+                </td>
+                <td>Charger Amazon Basics</td>
+                <td class="td">14,99 €</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>
+                  <a
+                    href="https://www.amazon.it/nuovo-tablet-fire-hd-8-schermo-hd-da-8-nero-64-gb-con-offerte-speciali/dp/B0839MWCMT/ref=sr_1_5?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone&qid=1612790568&s=amazon-devices&sr=1-5"
+                  >
+                    <img
+                      class="img"
+                      src="https://images-na.ssl-images-amazon.com/images/I/61YZ10XDqnL._AC_SL1000_.jpg"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="right"
+                      title="Schermo HD da 8”, il doppio dello spazio di archiviazione (32 o 64 GB di memoria interna espandibile fino a 1 TB con una scheda microSD) e 2 GB di RAM.
                 Fino a 12 ore di autonomia per leggere, navigare sul web, guardare video e ascoltare musica.
                 Ora con un ingresso USB-C per una ricarica più facile. Ricarica completa in meno di 5 ore (usando il cavo e il caricatore inclusi).
                 Nuovo processore quad-core da 2 GHz per prestazioni più rapide del 30%.
@@ -224,19 +289,101 @@
                 Con Amazon Prime, goditi l'accesso a Prime Video, Prime Music e Prime Reading dal tuo tablet Fire.
                 ATTENZIONE: Google Play Store non è disponibile sui tablet Fire. Alcune applicazioni potrebbero non essere disponibili.
                 "
-              /></a>
-            </td>
-            <td>Tablet Fire HD 8</td>
-            <td class="td">1129,99 €</td>
-          </tr>
-        </tbody>
-      </table>
+                  /></a>
+                </td>
+                <td>Tablet Fire HD 8</td>
+                <td class="td">1129,99 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <div class="carta w-100 mb-2">
+            <div class="carta-bodyy">
+              <img
+               
+                src="https://i.pinimg.com/originals/0e/a5/86/0ea58664e3dddf562e2c05b10635e5fd.png"
+                height="175"
+              />
+              <h5 class="carta-title">Smartphone</h5>
+              <h6 class="carta-text"></h6>
+              <a href="#">Add to cart</a>
+            </div>
+
+            <div class="carta w-100 mb-2">
+              <div class="carta-bodyy">
+                <img
+                  
+                  src="https://www.freepnglogos.com/uploads/smartphone-png/smartphone-icon-png-mobile-photo-phone-image-mobile-frame-27.png"
+                  height="175"
+                />
+                <h5 class="carta-title">Smartphone</h5>
+                <h6 class="carta-text"></h6>
+                <a href="#">Add to cart</a>
+              </div>
+            </div>
+            <div class="carta w-100 mb-2">
+              <div class="carta-bodyy">
+                <img
+                  
+                  src="https://i.pinimg.com/originals/0e/a5/86/0ea58664e3dddf562e2c05b10635e5fd.png"
+                  height="175"
+                />
+                <h5 class="carta-title">Smartphone</h5>
+                <h6 class="carta-text"></h6>
+                <a href="#">Add to cart</a>
+              </div>
+            </div>
+
+            <div class="carta w-100 mb-2">
+              <div class="carta-bodyy">
+                <img
+                  
+                  src="https://i.pinimg.com/originals/0e/a5/86/0ea58664e3dddf562e2c05b10635e5fd.png"
+                  height="175"
+                />
+                <h5 class="carta-title">Smartphone</h5>
+                <h6 class="carta-text"></h6>
+                <a href="#">Add to cart</a>
+              </div>
+            </div>
+            <div class="carta w-100 mb-2">
+              <div class="carta-bodyyy">
+                <img
+                  
+                  src="https://i.pinimg.com/originals/0e/a5/86/0ea58664e3dddf562e2c05b10635e5fd.png"
+                  height="175"
+                />
+                <h5 class="carta-title">Smartphone</h5>
+                <h6 class="carta-text"></h6>
+                <a href="#">Add to cart</a>
+              </div>
+            </div>
+
+            <div class="carta w-100 mb-2">
+              <div class="carta-bodyy">
+                <img
+                  
+                  src="https://i.pinimg.com/originals/0e/a5/86/0ea58664e3dddf562e2c05b10635e5fd.png"
+                  height="175"
+                />
+                <h5 class="carta-title">Smartphone</h5>
+                <h6 class="carta-text"></h6>
+                <a href="#">Add to cart</a>
+              </div>
+            </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" style="height:170vh"></div>
     </div>
-    <footer class="bg-light text-center text-lg-start">
+    <footer class="text-center text-lg-start">
       <!-- Copyright -->
       <div class="text-center p-3">
         © 2021 Copyright:
-        <a class="text-dark" href="https://strive.school/">strive.school</a>
+        <a href="https://strive.school/">strive.school</a>
       </div>
       <div class="text-center">
         <p onclick="footerfaker()">Address : Via A.Labriola 61</p>
@@ -253,36 +400,50 @@
         return new bootstrap.Tooltip(tooltipTriggerEl);
       });
     </script>
+
     <script>
       const h1changer = () => {
         let text = document.querySelector("h1");
-        text.innerHTML = "Top 5 Smartphone";
+        text.innerHTML = "Top 5 Tech";
         text.style.color = "orange";
         text.style.weight = "800";
       };
       const bgchanger = () => {
-        let a = document.querySelectorAll(".nav-link");
-        document.querySelector(".navlogo").src =
-          "https://upload.wikimedia.org/wikipedia/donate/thumb/f/fd/Amazon-logo-white.svg/1200px-Amazon-logo-white.svg.png";
-        document.querySelector(".navlogo").style.width = "150px";
+        let footer = document.querySelector("footer");
+        let td = document.querySelectorAll("td");
+        let th = document.querySelectorAll("th");
+        let a = document.querySelectorAll("nav-link a");
         let nav = document.querySelector("nav");
         let bg = document.querySelector("body");
+        document.querySelector(".navlogo").src =
+          "data:image/png;base64,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";
+        document.querySelector(".navlogo").style.width = "100px";
+        footer.style.backgroundColor = "#F78F00";
+        footer.style.color = "white";
+
         bg.style.backgroundColor = "#323F48";
-        nav.style.background = "#131921";
-        a.forEach((a) => {
-          a.style.color = "#ffffff";
+        nav.style.background = "#233448";
+        td.forEach((element) => {
+          element.style.color = "white";
         });
-        console.log(a);
+        th.forEach((element) => {
+          element.style.color = "white";
+        });
+        a.forEach((a) => {
+          a.style.color = "#ffffff!important";
+        });
       };
       const footerfaker = () => {
         let foot = document.querySelector("p");
         foot.innerHTML = "Hi, im just a fake address.";
       };
       const imgvisibility = () => {
-        let img = document.querySelectorAll(".img");
+        let img = document.querySelectorAll(".img"); //selecting the image class
         img.forEach((img) => {
+          // using a foreach to select each element of the array generated by "querySelectorAll"(line:283)
           if (img.style.display === "none") {
-            img.style.display = "block";
+            //checking css property display none
+            img.style.display = "block"; //
           } else {
             img.style.display = "none";
           }
@@ -299,18 +460,8 @@
       };
     </script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
   </body>
